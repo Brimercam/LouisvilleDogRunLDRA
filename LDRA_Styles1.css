@@ -1,93 +1,147 @@
-  /* Styles for Navigation Bar */
-
-.wrapper {
-    margin: 0 auto;
-    width: 90%;
+body,
+p, 
+h1 {
+    margin: 0px;    
 }
+  
+    /***************  
+     Navigation Bar 
+    ****************/
 
-header {
+#navbar {
     width: 100%;
-    max-width: 100%;
     position: fixed;
     z-index: 999;
     background: rgba(50,50,50,.95);
-    box-shadow: 0 5px 9px rgba(50,50,50,.95);
+    box-shadow: 5px 6px 10px rgba(50,50,50,.95);
 }
 
-}
 nav {
     margin-top: 10px;
-    border-radius: 1px;
 }
+
+a:hover {
+    color: orange;
+    transition: background-color .5s;
+  }
 
 nav a {
     font: 1.5em/1em rockwell;
     display: inline-block;
-    padding: 9px 12px;
+    padding: 10px 13px;
     text-decoration: none;
     color: rgb(222, 252, 213);
 }
-   /* Primary Content */
+
+    /**************** 
+     Primary Content  
+    ****************/
 
 .primaryContent h1 {
-    background: url("runningdog.jpg");
-    height: 400px;
-    background-image: center;
-    font-size: 75px;
-    color: rgb(210, 235, 210);
-    text-shadow: 5px 5px 10px #222;
-    font-weight: 600;  
-    padding-top: 75px;
+    background: url("runningdog.jpg") no-repeat center center;
+    height: 355px;
     background-size: cover;
+    font-size: 115px;
+    color: rgb(210, 235, 210);
+    text-shadow: 12px 12px 14px #222;
+    font-weight: 700;  
+    padding: 1.3em;
+}
+
+.primaryContent p,
+form {
+    padding: 2em;
 }
 
 .primaryContent,
-#footercontainer {
+#footercontainer,
+form{
+    padding-top: 1.3em;
+    max-width: 100%;
     text-align: center;
 }
 
 .primaryContent p {
+    padding-top: 1.3em;
     font-size: 1.2em;
     line-height: 2;
 }
+
 .primaryContent {
     font-family: rockwell, sans-serif;
     font-weight: 200;
-    background-color: rgb(2, 2, 2);
-    margin: auto;
-    line-height: 1;    
+    background-color: #E0EEE0;
+    margin: auto;  
 }
-.parktable{
-    flex-wrap: wrap;
-}
-
-
-  /* Footer Styles */
-
-#footercontainer {
-   
-    font-family: Chalkduster;
-}
-
-  /* Media Query */
-
-@media only screen and (max-width: 576px) {
-    body {
-        background-color: rgb(1, 5, 2);
-    }
-
-    nav {
-        display: block;
-    }
+    /************
+      Park Images
+    ************/
     
+.parktable figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.parktable figure:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.parktable img {
+    border-radius: 48%;
+    padding-top: 1em;
+    width: 300px;
+}
+    
+   /************  
+      Footer  
+   ************/
+
+#map {
+    padding-top: 1em;
+    border: 3px ridge rgb(0, 0, 0);
+    min-height: 250px;
+    height: 300px;
+    width: auto;   
+}
+
+#footercontainer { 
+    padding: 3em;
+    font-family: rockwell;
+    font-size: 1em;
+}
+
+    /******************  
+       Media Queries  
+    ******************/
+@media only screen and (max-width: 910px) {
+    .primaryContent h1{
+        font-size: 4.6em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .parktable img {
+        width: 200px;
+    }
+    #navbar {
+        box-shadow: 1px 1px 2px rgba(50,50,50,.95);
+    }
+    nav a {
+        font: 1em/.5em rockwell;
+    }
+    .parktable {
+        display: inline-block;
+    }
     .primaryContent h1 {
-        background-image: none;
         background-color: none;
-        font-size: 45px;
+        font-size: 3em;
+        height: 200px;
     }
 
     .primaryContent {
         padding-top: 2em;
-
+        font-size: .8em;
     }
 }
+
