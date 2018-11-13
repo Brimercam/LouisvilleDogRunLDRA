@@ -1,0 +1,93 @@
+  /* Styles for Navigation Bar */
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    z-index: 999;
+    background: rgba(50,50,50,.95);
+    box-shadow: 0 5px 9px rgba(50,50,50,.95);
+}
+
+}
+nav {
+    margin-top: 10px;
+    border-radius: 1px;
+}
+
+nav a {
+    font: 1.5em/1em rockwell;
+    display: inline-block;
+    padding: 9px 12px;
+    text-decoration: none;
+    color: rgb(222, 252, 213);
+}
+   /* Primary Content */
+
+.primaryContent h1 {
+    background: url("runningdog.jpg");
+    height: 400px;
+    background-image: center;
+    font-size: 75px;
+    color: rgb(210, 235, 210);
+    text-shadow: 5px 5px 10px #222;
+    font-weight: 600;  
+    padding-top: 75px;
+    background-size: cover;
+}
+
+.primaryContent,
+#footercontainer {
+    text-align: center;
+}
+
+.primaryContent p {
+    font-size: 1.2em;
+    line-height: 2;
+}
+.primaryContent {
+    font-family: rockwell, sans-serif;
+    font-weight: 200;
+    background-color: rgb(2, 2, 2);
+    margin: auto;
+    line-height: 1;    
+}
+.parktable{
+    flex-wrap: wrap;
+}
+
+
+  /* Footer Styles */
+
+#footercontainer {
+   
+    font-family: Chalkduster;
+}
+
+  /* Media Query */
+
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: rgb(1, 5, 2);
+    }
+
+    nav {
+        display: block;
+    }
+    
+    .primaryContent h1 {
+        background-image: none;
+        background-color: none;
+        font-size: 45px;
+    }
+
+    .primaryContent {
+        padding-top: 2em;
+
+    }
+}
