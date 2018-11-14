@@ -1,4 +1,4 @@
- const welcome = ("Hello and welcome the the LDRA Homepage!");
+ /*const welcome = ("Hello and welcome the the LDRA Homepage!");
 window.alert (welcome);
 
 /*Currently working on fixing this so #navbar will change color with scrolling
