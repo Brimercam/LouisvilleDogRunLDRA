@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!----Stylesheet and JavaScript links---->
   <link rel="stylesheet" href=LDRA_Styles1.css>
   <script src="LDRA_JavaScript.js"></script>
   <title>Louisville Dog Run Associ</title>
 </head>
 
-<body>
+<!---Beginning of Body--->
+<body> 
     <header>
         <div id="navbar">
             <nav>
@@ -29,7 +31,7 @@
             operating
             off-leash dog parks around the Louisville Area. There are currently eight official off-leash areas in the
             Louisville Area: </p>
-  
+  <!---Images of all parks--->
        <div class="parktable">
             <img src="Cochranhilllogo.gif">
             <img src="Championslogo.gif">                   
@@ -64,11 +66,11 @@
     </form>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZW0gmF9ybxCcmEwhwlWnN9oPQhIBXg74&callback=initMap" async defer></script>
 
-    <div id="map">
-
-    </div>
-</div>
+<!---Google Map API--->
+    <div id="map"></div>
+  </div>
 </body>
+<!-----End of Body----->
 
 <div id="footercontainer">
     <footer>
@@ -79,7 +81,6 @@
             info@louisvilledogs.com
         </p>
     </footer>
-
 </div>
 
 </html>
