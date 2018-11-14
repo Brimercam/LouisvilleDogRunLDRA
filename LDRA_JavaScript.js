@@ -9,6 +9,7 @@ window.onscroll = () => {
 };
 
 */
+
 function initMap() {
     // The location of Tom Sawyer Park
     let cherokee = {lat: 38.244566, lng: -85.694697};
