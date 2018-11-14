@@ -8,9 +8,10 @@
   <script src="LDRA_JavaScript.js"></script>
   <title>Louisville Dog Run Associ</title>
 </head>
-
+<!----Beginning Body---->
 <body>
     <header>
+<!---Navigation Bar--->
         <div id="navbar">
             <nav>
                 <a href="#rules">Rules</a>
@@ -21,6 +22,7 @@
                 <a href="#gallery">Gallery</a>
             </nav>
         </div>
+<!---End Navigation Bar--->
     </header>
 
     <div class="primaryContent">
@@ -29,19 +31,21 @@
             operating
             off-leash dog parks around the Louisville Area. There are currently eight official off-leash areas in the
             Louisville Area: </p>
-  
-       <div class="parktable">
-            <img src='img/barklands-shield.gif'>
-            <img src='img/cauleylogo.gif'>
-            <img src='img/Championslogo.gif'>
-            <img src='img/Cochranhilllogo.gif'>
-            <img src='img/newvettinerlogo.gif'>                   
-            <img src='img/Oldlouisvillelogo.gif'>
-            <img src='img/waverly.gif'>
-        </div>       
 
+<!---Park Link Images--->
+       <div class="parktable">
+            <img src='img/barklands-shield.gif' alt="Barklands of Floyds Fork link">
+            <img src='img/cauleylogo.gif' alt="Elizabeth Cleland link">
+            <img src='img/Championslogo.gif' alt="Champions Park link">
+            <img src='img/Cochranhilllogo.gif' alt="Cochan Hill Park link">
+            <img src='img/newvettinerlogo.gif' alt="New Vettinger Park link">                   
+            <img src='img/Oldlouisvillelogo.gif' alt="Old Louisville Park link">
+            <img src='img/waverly.gif' alt='Waverly Park Link'>
+        </div>       
+<!---End Park Link Images-->
     </div>
 
+<!---Beginning Form--->
  <div class="form">
     <form>
         <h1>Does my dog meet LDRA requirements for park entry?</h1>
@@ -66,14 +70,16 @@
 
         <button type="submit" name="submit" onclick="sendData({test:'ok'})">Submit</button>
     </form>
+<!--Form End-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZW0gmF9ybxCcmEwhwlWnN9oPQhIBXg74&callback=initMap" async defer></script>
-
-    <div id="map">
-
-    </div>
+<!---Google API Map--->
+    <div id="map"> </div>
 </div>
-</body>
 
+</body>
+<!----Body End---->
+
+<!---Beginning Footer--->
 <div id="footercontainer">
     <footer>
         <p>LOUISVILLE DOG RUN ASSOCIATION
@@ -84,5 +90,6 @@
         </p>
     </footer>
 </div>
+<!---Footer End--->
 
 </html>

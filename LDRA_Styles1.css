@@ -39,7 +39,8 @@ nav a {
 
 .primaryContent h1 {
     background: url('img/Runningdog.jpg') no-repeat center center;
-    height: 355px;
+    
+    height: 400px;
     background-size: cover;
     font-size: 115px;
     color: rgb(210, 235, 210);
