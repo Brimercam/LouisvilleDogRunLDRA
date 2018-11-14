@@ -79,7 +79,6 @@
             info@louisvilledogs.com
         </p>
     </footer>
-
 </div>
 
 </html>
