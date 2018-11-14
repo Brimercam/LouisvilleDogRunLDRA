@@ -107,10 +107,16 @@ form{
 
 #footercontainer { 
     background: url('img/Dogface.jpg') no-repeat center center; 
-    height: 400px;
+    background-size: cover;
+    height: 225px;
     padding: 3em;
     font-family: rockwell;
     font-size: 1.2em;
+   
+}
+.footerdesign {
+    padding-top: 1.5em;
+    font-size: .7em;
 }
 
     /******************  
@@ -124,7 +130,7 @@ form{
 
 @media only screen and (max-width: 700px) {
     .parktable img {
-        width: 200px;
+        width: 225px;
     }
     #navbar {
         box-shadow: 1px 1px 2px rgba(50,50,50,.95);
