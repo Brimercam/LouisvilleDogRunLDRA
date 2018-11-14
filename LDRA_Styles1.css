@@ -14,6 +14,7 @@ h1 {
     z-index: 999;
     background: rgba(50,50,50,.95);
     box-shadow: 5px 6px 10px rgba(50,50,50,.95);
+   
 }
 
 nav {
@@ -23,7 +24,7 @@ nav {
 a:hover {
     color: orange;
     transition: background-color .5s;
-  }
+}
 
 nav a {
     font: 1.5em/1em rockwell;
@@ -38,7 +39,8 @@ nav a {
     ****************/
 
 .primaryContent h1 {
-    background: url('img/Runningdog.jpg') no-repeat center center; 
+    background: url('img/Runningdog.jpg') no-repeat center center;
+    /*https://www.pexels.com/photo/animal-animal-photography-animal-portrait-ball-422220/*/ 
     height: 400px;
     background-size: cover;
     font-size: 115px;
@@ -46,6 +48,7 @@ nav a {
     text-shadow: 12px 12px 14px #222;
     font-weight: 700;  
     padding: 1.3em;
+
 }
 
 .primaryContent p,
@@ -70,7 +73,7 @@ form{
 .primaryContent {
     font-family: rockwell, sans-serif;
     font-weight: 200;
-    background-color: #E0EEE0;
+    background:  white;
     margin: auto;  
 }
     /************
@@ -83,12 +86,14 @@ form{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+
 .parktable figure:hover img {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
+
 .parktable img {
-    border-radius: 48%;
+    border-radius: 45%;
     padding-top: 1em;
     width: 300px;
 }
@@ -107,13 +112,14 @@ form{
 
 #footercontainer { 
     background: url('img/Dogface.jpg') no-repeat center center; 
+    /*https://www.pexels.com/photo/adorable-blur-breed-close-up-406014/*/
     background-size: cover;
     height: 225px;
     padding: 3em;
     font-family: rockwell;
-    font-size: 1.2em;
-   
+    font-size: 1.2em;   
 }
+
 .footerdesign {
     padding-top: 1.5em;
     font-size: .7em;
@@ -130,18 +136,19 @@ form{
 
 @media only screen and (max-width: 700px) {
     .parktable img {
+        display: inline;
         width: 225px;
     }
     #navbar {
         box-shadow: 1px 1px 2px rgba(50,50,50,.95);
+        display: flex;
+        justify-content: center;
     }
     nav a {
         font: 1em/.5em rockwell;
     }
-    .parktable {
-        display: inline-block;
-    }
     .primaryContent h1 {
+        padding-top: 2em;
         background-color: none;
         font-size: 3em;
         height: 200px;
@@ -150,6 +157,12 @@ form{
     .primaryContent {
         padding-top: 2em;
         font-size: .8em;
+    }
+
+    .footerdesign {
+        margin: 0em;
+        padding: 0em;
+        font-size: .5em;
     }
 }
 
